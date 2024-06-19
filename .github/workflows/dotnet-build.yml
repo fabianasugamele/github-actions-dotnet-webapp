@@ -6,10 +6,8 @@ on:
     branches: [main]
   pull_request:
     branches: [main]    
- 
-  on:
   schedule:
-  - cron: "0 * * * *" #Ação agendada para ser executada a cada hora
+    - cron: '0 * * * *' #Executa a cada hora #Ação agendada para ser executada a cada hora
     
   # Permite que você execute este fluxo de trabalho manualmente na guia de ações
   workflow_dispatch:  
